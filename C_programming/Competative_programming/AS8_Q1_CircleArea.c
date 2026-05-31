@@ -1,0 +1,28 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Q1.Write a program which accept radius of circle from user and calculate its area.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+double CircleArea(float fRadius)
+{
+  const double PI = 3.14;
+  return PI * fRadius * fRadius;
+}
+int main()
+{
+  float fValue = 0.0f;
+  double dRet = 0.0;
+  printf("Enter a Radius: ");
+  scanf("%f",&fValue);
+  dRet = CircleArea(fValue);
+  printf("Area of Circle is : %lf\n",dRet);
+  return 0;
+}
+
+/*
+
+output:
+
+Enter a Radius: 5.3
+Area of Circle is : 88.202606
+
+*/

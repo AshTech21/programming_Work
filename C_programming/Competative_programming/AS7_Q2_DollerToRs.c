@@ -1,0 +1,34 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Q3. Accept amount in dollars and convert it into rupees. Consider 1 dollar as 70 rupees.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+
+int DollarToINR(int iNo)
+{   
+
+  if(iNo < 0)
+  {
+    iNo = -iNo;
+  }
+
+  return iNo * 70;
+}
+int main()
+{
+    int iValue= 0;
+    int iRet = 0 ;
+    printf("Enter a Number: ");
+    scanf("%d",&iValue);   
+    iRet =DollarToINR(iValue);
+    printf("%d INR \n",iRet);
+    return 0;
+}
+
+
+/*
+
+output:
+Enter a Number: 10
+700 INR 
+
+*/

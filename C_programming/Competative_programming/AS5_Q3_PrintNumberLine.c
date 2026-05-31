@@ -1,0 +1,34 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Q3. Write a program which accept number from user and print the number line.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+
+void Display(int iNo)
+{
+   
+    int iCnt = 0;
+
+    for(iCnt = -(iNo); iCnt <= iNo ;iCnt++)
+    {
+        printf("%d\t",iCnt);
+    }
+    printf("\n");
+
+}
+int main()
+{
+    int iValue= 0;
+    printf("Enter a Number: ");
+    scanf("%d",&iValue);   
+    Display(iValue);
+    return 0;
+}
+
+
+/*
+
+output:
+Enter a Number: 4
+-4	-3	-2	-1	0	1	2	3  4
+
+*/

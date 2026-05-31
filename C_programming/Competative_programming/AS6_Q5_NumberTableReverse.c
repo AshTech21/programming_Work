@@ -1,0 +1,32 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Q4. Write a program which accept number from user and print table in reverse of that number.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+void Table(int iNo)
+{
+  int iCnt = 0;
+  for(iCnt =10; iCnt>=1 ; iCnt--)
+  {
+    printf("%d\t",iNo * iCnt);
+  }
+  printf("\n");
+}
+int main()
+{
+    int iValue = 0;
+    int iRet = 0;
+
+    printf("Enter a Number: ");
+    scanf("%d", &iValue);
+    Table(iValue);
+    return 0;
+}
+
+/*
+
+output:
+
+Enter a Number: 2
+20	18	16	14	12	10	8	6	4	2
+
+*/

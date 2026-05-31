@@ -1,0 +1,33 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Q5. Write a program which accept number from user and print all multiples of that number up to 5.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+
+void MultipleDisplay(int iNo)
+{
+   
+    int iCnt = 0;
+    for(iCnt = 1; iCnt <= 5;iCnt++)
+    {
+        printf("%d\t",iCnt * iNo);
+    }
+    printf("\n");
+
+}
+int main()
+{
+    int iValue= 0;
+    printf("Enter a Number: ");
+    scanf("%d",&iValue);   
+    MultipleDisplay(iValue);
+    return 0;
+}
+
+
+/*
+
+output:
+Enter a Number: 5
+5	10	15	20	25
+
+*/
