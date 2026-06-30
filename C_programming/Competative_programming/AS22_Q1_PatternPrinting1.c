@@ -1,0 +1,39 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Q1. Write a proram to print the following Pattern
+// 
+//  input: 5
+//      
+//  Output: A	B	C	D	E
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+void Pattern(int iNo)
+{
+    int iCnt = 0;
+    char ch = '\0';
+
+    for(iCnt = 1, ch = 'A'; iCnt <= 5 ; iCnt++ , ch++)
+    {
+        printf("%c\t",ch);
+    }
+    printf("\n");
+}
+int main()
+{
+    int iValue = 0;
+    printf("Enter number of elemenets :");
+    scanf("%d",&iValue);
+  
+    Pattern(iValue);
+    return 0;
+}
+
+
+/*
+
+output :
+Enter number of elemenets :5
+A	B	C	D	E
+
+*/
