@@ -1,4 +1,4 @@
-# Q14. Write a program which accepts one number and check weather it is palindrome or not
+# Q15. Write a program which accepts one number and check weather it is palindrome or not
 
 # Function Name : ChkPalindrome()
 # Work : Accept one number from user and check weather it is palindrome or not
